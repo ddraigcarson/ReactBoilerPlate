@@ -2,14 +2,16 @@
   "name": "boiler-plate",
   "version": "1.2.0",
   "description": "Boiler Plate",
-  "watch": true,  
+  "watch": true,
   "dependencies": {
     "express": "^4.16.3",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-pose": "^3.3.6",
     "react-redux": "^5.0.7",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "styled-components": "^4.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -34,7 +36,7 @@
     "webpack-dev-server": "^2.11.2"
   },
   "scripts": {
-    "start:dev": "webpack-dev-server",
+    "start": "webpack-dev-server",
     "build": "webpack",
     "watch": "webpack --watch",
     "lint": "./node_modules/.bin/eslint ./src"
