@@ -4,16 +4,7 @@ import { connect } from "react-redux";
 
 import { incrementNum, decrementNum, resetCounter } from "../actions/appActions";
 
-export class Controller extends Component {
-
-  render() {
-    return (
-      <Controls {...this.props}/>
-    );
-  }
-}
-
-export const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = dispatch => {
   return {
     increment: () => {
       dispatch(incrementNum());
